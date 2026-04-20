@@ -1,0 +1,68 @@
+{
+  "data": "D:\\SIIT\\DES400\\ProjectGesture\\dataset\\gestures.npz",
+  "outdir": "D:\\SIIT\\DES400\\ProjectGesture\\models\\gesture_lstm",
+  "epochs": 15,
+  "batch_size": 32,
+  "lr": 0.001,
+  "val_split": 0.15,
+  "lstm_units": 128,
+  "dense_units": 128,
+  "dropout": 0.3,
+  "use_class_weights": true,
+  "seed": 42,
+  "classes": [
+    "desktop_left",
+    "desktop_right",
+    "idle",
+    "screenshot",
+    "scroll_down",
+    "scroll_left",
+    "scroll_right",
+    "scroll_up",
+    "tab_left",
+    "tab_right"
+  ],
+  "num_classes": 10,
+  "counts": [
+    227.0,
+    227.0,
+    759.0,
+    238.0,
+    158.0,
+    186.0,
+    194.0,
+    210.0,
+    190.0,
+    209.0
+  ],
+  "val_metrics": {
+    "loss": 0.11566656082868576,
+    "accuracy": 0.9782134890556335
+  },
+  "T": 30,
+  "F": 63,
+  "class_counts_train": {
+    "scroll_right": 194,
+    "idle": 759,
+    "tab_right": 209,
+    "scroll_up": 210,
+    "desktop_right": 227,
+    "scroll_left": 186,
+    "screenshot": 238,
+    "desktop_left": 227,
+    "tab_left": 190,
+    "scroll_down": 158
+  },
+  "class_counts_val": {
+    "scroll_up": 37,
+    "scroll_down": 28,
+    "desktop_left": 40,
+    "scroll_left": 33,
+    "desktop_right": 40,
+    "tab_right": 37,
+    "scroll_right": 34,
+    "screenshot": 42,
+    "idle": 134,
+    "tab_left": 34
+  }
+}
